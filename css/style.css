@@ -1,0 +1,229 @@
+/*universal*/
+html {
+    font-size: 16;
+    background-color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+
+}
+
+
+/*header*/
+header {
+    height: 75px;
+    align-items: center;
+    display: flex;    
+    
+}
+
+#small_logo{
+    height: 75px;
+    
+}
+
+/*media queries: tablet and mobile */
+
+/* Media queries: tablet */
+
+@media only screen and (max-width: 800px) {
+    
+    .sidebar_container {
+        min-width: 200px;
+       
+    }
+    
+    .jumbotron img{
+        width: 20%;
+        height: 50%;
+        margin-top: 25%;
+    }
+
+
+    
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 600px) {
+    .jumbotron img{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        display: flex;
+        margin-top: 500px;
+        z-index: 1;
+       
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    nav li{
+        font-size: 0.9em;
+       
+               
+    }
+
+    #small_logo{
+        height: 90px;
+        margin-top: 25px;
+        
+    }
+
+  
+
+  
+    .sidebar_container {
+        min-width: 400px;
+       
+    }
+}   
+
+/*nav*/
+
+nav {
+ display: inline-flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+   
+   
+}
+
+nav li{
+    display:  inline-flex;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    
+           
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*main container*/
+
+.main_container {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+/*jumbotron */
+
+.jumbotron {
+   
+    min-width: 30%;
+    display: flex;
+    
+    
+}
+
+
+.jumbotron img {
+    width: 75%;
+      
+   
+}
+
+
+
+/*sidebar*/
+
+.sidebar_container {
+    width: 25%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 100px;
+
+}
+
+
+
+.sidebar_contents h3{
+    padding: 20px;
+   
+}
+
+.sidebar_contents li{
+    padding: 20px;
+    border: 1px solid black;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #110a6a;
+    color: #ffff;
+}
+
+.sidebar_contents a{
+    color: #ffff
+}
+
+.sidebar_contents li:hover{
+    background-color: red;
+    color: black;
+    
+}
+
+.sidebar_container li a:hover{
+    color: black;
+}
+
+
+/* logo and image*/
+
+.jumbotron{
+    width: 75%;
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+    
+    
+}
+
+/*footer*/
+footer {
+    background-color: #110a6a;
+    height: 200px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer p {
+    color: aliceblue;
+    font-size: 0.8em;
+    align-self: flex-end;
+    padding-bottom: 25px;
+}
