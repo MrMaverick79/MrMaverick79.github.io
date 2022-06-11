@@ -227,3 +227,14 @@ footer p {
     align-self: flex-end;
     padding-bottom: 25px;
 }
+
+/*buttons*/
+#light {
+    
+    background-color: grey;        /*Light is default so must be on*/
+}
+
+.button {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
