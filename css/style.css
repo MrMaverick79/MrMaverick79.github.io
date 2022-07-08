@@ -121,30 +121,31 @@ a:hover{
     line-height: 2;
 }
 
-/*media queries: mobile*/
-@media screen and (max-width: 500px){
+/*media queries: smaller screens*/
+@media screen and (max-width: 450px){
         .card{
-            width: 85%;
-            height: 200px;
+            max-width: 350px;
+            max-height: 240px;
+            
         }
 
         h1{
-            font-size: 2em;
+            font-size: 1.9em;
 
         }
 
         p{
-            font-size: 0.6em;
+            font-size: 0.8em;
         }
     
         .bottom {
         left: 260px;
-        top: 40px;
-        line-height: 4;
+        top: 50px;
+        
         }
 
         .bottom p{
-            line-height: 2;
+            line-height: 1.5;
         }
 
         #email {
@@ -159,7 +160,7 @@ a:hover{
 
 
     }
-
+    
 
     
 
