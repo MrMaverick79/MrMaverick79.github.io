@@ -2,60 +2,120 @@
 <html>
 
     <head>
-        <title>Brendan Tuckerman: Web Development</title>
+        <title>Brendan Tuckerman: Portfolio</title>
         <link href="./css/reset.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
+        <link href="portfolio.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="icon" href ="./images/icon_bt.ico"-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="./portfolio.js" async></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
 
     <body>
+
         <header>
-        <!--todo: toggle>
-            <div id ='lightDark'>
-                
-                <button class="button" id="light">LIGHT MODE</button>
-                <button class="button" id="dark">DARK MODE</button>
-            </div>
-        -->
+            <img src="./images/small_bt_logo.png" id="upper_icon" />
+            <h3 id="upper_name"><a href ="#" target="_blank" rel="noopener noreferrer">Brendan Tuckerman</a></h3>
             
+           <div class="dropdown">
+                <img id= "burger_menu_image" class="dropbtn" src="./images/bars-solid.svg" onclick="myFunction()"/>
+                <div id ="socials" class="dropdown-content">
+                    <a href="mailto:brendan.tuckerman@gmail.com?subject=Hello!" target="_blank" rel="noopener noreferrer"><img src="./images/envelope-regular.svg"/></a>
+                    <a href="https://github.com/MrMaverick79" target="_blank" rel="noopener noreferrer"><img src="./images/github-brands.svg"/></a>
+                    <a href="https://twitter.com/newtr1ck" target="_blank" rel="noopener noreferrer"><img src="./images/twitter-brands.svg"/></a>
+                    <a href="https://www.linkedin.com/in/brendan-tuckerman/" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-brands.svg"/></a>
+                    
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    
+                    <li><a href= "https://mrmaverick79.github.io/portfolio/about" target="_blank" rel="noopener noreferrer">About Me</a></li>
+                    <li><a href="#portfolio_container">Projects</a></li>
+                    <li><a href="http://newtrick.com.au" target="_blank" rel="noopener noreferrer">Blog</a></li>
+
+                </ul>
+
+                
+
+                
+
+
+            </nav>
+
+           
 
         </header>
 
         <main>
-            <!--background-->
+            <!--main content-->
 
-           
+            <div class = "shape" id ="yellow-circle">
 
-            <div class = "card"> 
-                <!--card content here-->  
-                <div class ="information top">
-                   <p>Brendan Tuckerman</p>
-                   <p>Web Development</p>
-                   <p><a href ="mailto: brendan.tuckerman@gmail.com">brendan.tuckerman@gmail.com</a></p>
-                </div> 
-                <div class = "embossed">
-                    <h1><span id="br"BR>BR</span><span id="en">EN</span><span id ="dan">DAN</span>
-                    <span id="tuc">TUC</span><span id ="ker">KER</span><span id= "man">MAN</span></h1>   
-                </div>
-                <div class = "information bottom">
-                    <p><a href="mrmaverick79.github.io/portfolio/index.html" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
-                    <p><a href ="https://github.com/MrMaverick79" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    <p><a href="http://newtrick.com.au">Website</a></p>
-                    
-                    
-                    
-                </div>
             </div>
-                    
+
+            <div id="introduction">
+                <h1>Hi!</h1>
+                <h1>I'm <span>Brendan Tuckerman</span></h1>
+                <h1>Front end<span> web developer</span></h1>
+                <h1>I make <span>websites</span></h1>
+                <p>I design and create <span>high quality</span> web projects with a focus on <span>user experience.</span></p>
+            </div>
+
+            <div id="button_selection">
+                <a href="mailto:brendan.tuckerman@gmail.com?subject=Hello!" target="_blank" rel="noopener noreferrer"><button class="center_buttons" id="contact_button">Contact Me</button></a>
+                <a href="./portfolio/business_card/index.html" target="_blank" rel="noopener noreferrer"> <button class="center_buttons" id="portfolio_button">My Card</button></a>
+            </div>
+
+            <div class="shape" id="blue_bar">
+                
+            </div>
+
+            <div class ="shape" id="green_square">
+
+            </div>
+            <h2 id="recent_work">Recent Work</h2>
+            <div id= "portfolio_container">
+                
+
+
+                <div class = "container" id="portfolio_item_one" onclick="location.href='./portfolio/HoTC/index.html'">
+                        
+                        
+                        <p>Head of The Class Consulting<br /><br /><br /><span>A mock education consultancy company</span></p>
+                            
+                </div>
+
+                <div class = "container" id="portfolio_item_two" onclick="location.href='./portfolio/fitTrack/index.html'">
+                        
+                       
+                        <p>Fitness Tracker<br /><br /><br /><span>A timer to keep track of repetitions and sets using JavaScript, HTML, and CSS.</span></p>
+                </div>
+
+                <div class = "container" id="portfolio_item_three"onclick="location.href='https://codepen.io/mr_maverick79/pen/poLjajO'" >
+                       
+                        
+                        <p class="hidden_text">Rock, Paper, Scissors<br /><br /><br />
+                        <span>A Roman version of rock, paper and scissors as part of the General Assembly Software Engineering Intensive.</span></p>
+                </div>
+                
+
+            </div>
+
             
+
+
+
         </main>
 
 
+
+
     </body>
+    
 </html>
